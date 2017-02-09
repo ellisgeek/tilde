@@ -1,7 +1,8 @@
 # Tilde
 
-[![Demo](https://img.shields.io/badge/demo-cadejscroggins.github.io-lightgrey.svg)](https://cadejscroggins.github.io/tilde/)
-[![Release](https://img.shields.io/github/release/cadejscroggins/tilde.svg)](https://github.com/cadejscroggins/tilde/releases)
+[![Demo](https://img.shields.io/badge/demo-ellisgeek.github.io-0088FF.svg)](https://ellisgeek.github.io/tilde/)
+[![Demo](https://img.shields.io/badge/based%20on-cadejscroggins%2Ftilde-green.svg)](https://github.com/cadejscroggins/tilde/)
+[![Release](https://img.shields.io/github/release/ellisgeek/tilde.svg)](https://github.com/ellisgeek/tilde/releases)
 
 Inspired by [/r/startpages](https://www.reddit.com/r/startpages)—the idea is to have a homepage for your browser that is functional and sexy.
 
