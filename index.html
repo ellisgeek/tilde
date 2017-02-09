@@ -5,22 +5,24 @@
 
   var config = {
     categories: [
-      { name: "Learn", commands: [
-        { key: 'c', name: 'Coursera', url: 'https://www.coursera.org', search: '/courses?query=' },
-        { key: 'e', name: 'Egghead', url: 'https://egghead.io', search: '/search?q=' },
-        { key: 'K', name: 'Khan Academy', url: 'https://www.khanacademy.org', search: '/search?page_search_query=' },
-      ] },
-      { name: "Listen", commands: [
-        { key: 'h', name: 'Hypem', url: 'http://hypem.com', search: '/search/' },
-        { key: 'l', name: 'Line Radio', url: 'https://linerad.io', search: '/#/' },
-        { key: 's', name: 'SoundCloud', url: 'https://soundcloud.com', search: '/search?q=' },
+      // { name: "Learn", commands: [
+      //   { key: 'c', name: 'Coursera', url: 'https://www.coursera.org', search: '/courses?query=' },
+      //   { key: 'e', name: 'Egghead', url: 'https://egghead.io', search: '/search?q=' },
+      //   { key: 'K', name: 'Khan Academy', url: 'https://www.khanacademy.org', search: '/search?page_search_query=' },
+      // ] },
+      { name: "Media", commands: [
+        { key: 'bc', name: 'Bandcamp', url: 'https://bandcamp.com', search: '/search?q=' },
+        { key: 'sp', name: 'Spotify', url: 'https://play.spotify.com', search: '/search/' },
+        { key: 'sc', name: 'SoundCloud', url: 'https://soundcloud.com', search: '/search?q=' },
+        { key: 'tw', name: 'Twitch', url: 'https://twitch.tv', search: '' },
       ] },
       { name: "Work", commands: [
         { key: 'g', name: 'GitHub', url: 'https://github.com', search: '/search?q=' },
-        { key: 'm', name: 'Inbox', url: 'https://inbox.google.com', search: '/search/' },
-        { key: 'k', name: 'Keep', url: 'https://keep.google.com', search: '/#search/text=' },
+        { key: 'm', name: 'Mail', url: 'https://cloud.rootwerk.systems/mail', search: '' },
+        { key: 'o', name: 'OwnCloud', url: 'https://cloud.rootwerk.systems/cloud', search: '' },
+        { key: 'a', name: 'Box Administration', url: 'https://cloud.rootwerk.systems/admin', search: '' },
       ] },
-      { name: "People", commands: [
+      { name: "Social", commands: [
         { key: 'r', name: 'Reddit', url: 'https://www.reddit.com', search: '/search?q=' },
         { key: 't', name: 'Twitter', url: 'https://twitter.com', search: '/search?q=' },
         { key: 'i', name: 'Instagram', url: 'https://www.instagram.com', search: '/' },
@@ -33,7 +35,7 @@
     ],
 
     // if none of the keys are matched, this is used for searching.
-    defaultSearch: 'https://start.duckduckgo.com/?q=',
+    defaultSearch: 'https://google.com/?q=',
 
     // the delimiter between the key and your search query.
     // e.g. to search GitHub for potatoes you'd type "g:potatoes".
@@ -48,16 +50,16 @@
     instantRedirect: false,
 
     // suggest your most popular queries as you type.
-    suggestions: false,
+    suggestions: true,
 
     // max amount of suggestions to display.
-    suggestionsLimit: 4,
+    suggestionsLimit: 10,
 
     // open queries in a new tab.
     newTab: true,
 
     // the delimiter between the hours and minutes in the clock.
-    clockDelimiter: '&nbsp;',
+    clockDelimiter: ':',
 
     // used for determining when to redirect directly to a url.
     urlRegex: /^(?:(http|https)?:\/\/)?(?:[\w-]+\.)+([a-z]|[A-Z]|[0-9]){2,6}/i,
