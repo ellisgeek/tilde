@@ -10,11 +10,15 @@
       //   { key: 'e', name: 'Egghead', url: 'https://egghead.io', search: '/search?q=' },
       //   { key: 'K', name: 'Khan Academy', url: 'https://www.khanacademy.org', search: '/search?page_search_query=' },
       // ] },
-      { name: "Media", commands: [
+      { name: "Listen", commands: [
         { key: 'bc', name: 'Bandcamp', url: 'https://bandcamp.com', search: '/search?q=' },
         { key: 'sp', name: 'Spotify', url: 'https://play.spotify.com', search: '/search/' },
         { key: 'sc', name: 'SoundCloud', url: 'https://soundcloud.com', search: '/search?q=' },
-        { key: 'tw', name: 'Twitch', url: 'https://twitch.tv', search: '' },
+      ] },
+      { name: "Art", commands: [
+        { key: 'fa', name: 'Furaffinity', url: 'https://furaffinity.net', search: '/search?q=' },
+        { key: 'da', name: 'DeviantArt', url: 'https://deviantart.com', search: '/search/' },
+        { key: 'fn', name: 'FurryNetwork', url: 'https://beta.furrynetwork.com', search: 'artwork/popular/?tags%5B%5D=' },
       ] },
       { name: "Work", commands: [
         { key: 'g', name: 'GitHub', url: 'https://github.com', search: '/search?q=' },
@@ -22,15 +26,21 @@
         { key: 'o', name: 'OwnCloud', url: 'https://cloud.rootwerk.systems/cloud', search: '' },
         { key: 'a', name: 'Box Administration', url: 'https://cloud.rootwerk.systems/admin', search: '' },
       ] },
-      { name: "Social", commands: [
-        { key: 'r', name: 'Reddit', url: 'https://www.reddit.com', search: '/search?q=' },
+      { name: "Social / News", commands: [
+        { key: 'r', name: 'Reddit', url: 'https://www.reddit.com', search: '/r/' },
+        { key: 'hn', name: 'HN', url: 'https://news.ycombinator.com', search: '' },
         { key: 't', name: 'Twitter', url: 'https://twitter.com', search: '/search?q=' },
         { key: 'i', name: 'Instagram', url: 'https://www.instagram.com', search: '/' },
       ] },
       { name: "Download", commands: [
-        { key: 'T', name: 'The Pirate Bay', url: 'https://thepiratebay.org', search: '/search/' },
-        { key: 'Y', name: 'YIFY', url: 'https://yts.ag', search: '/browse-movies/' },
+        { key: 'tpb', name: 'The Pirate Bay', url: 'https://thepiratebay.org', search: '/search/' },
+        { key: 'yify', name: 'YIFY', url: 'https://yts.ag', search: '/browse-movies/' },
         { key: '7', name: '7digital', url: 'https://us.7digital.com', search: '/search?q=' },
+      ] },
+      { name: "Watch", commands: [
+        { key: 'n', name: 'Netflix', url: 'https://netflix.com', search: '/search?q=' },
+        { key: 'hbo', name: 'HBO Now', url: 'https://hbonow.com', search: '' },
+        { key: 'hu', name: 'Hulu', url: 'https://hulu.com', search: '/search?q=' },
       ] },
     ],
 
